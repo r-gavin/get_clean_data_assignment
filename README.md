@@ -21,7 +21,7 @@ The manipulation of the original data is performed in the "run_analysis.R" scrip
 - "UCI HAR Dataset" - directory containing Version 1.0 Human Activity Recognition Using Smartphones data files and description files ("README.txt", "features_info.txt", "features.txt", "activity_labels.txt")
 
 
-**Notes:    **
+**Notes:**
 
 - Use `read.table(file_path, header = TRUE)` when reading "mean_std_summary_table.txt" into R.
 - Features are normalized and bounded within [-1,1].
