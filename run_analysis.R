@@ -21,15 +21,12 @@ for(i in data_set) {
 #                         tbl_df(read.table(paste0(top_dir,"/",i,"/Inertial Signals/",ii,jj,"_",i,".txt"))))
 #            }
 #      }
+
 }
 ##################################
 
 ## create columns to describe data set type: 'test' or 'train'
-#test_type <- tbl_df(data.frame(rep("test",nrow(subject_test)),
-#                               stringsAsFactors = FALSE))
 test_type <- as.character(rep("test",nrow(subject_test)))
-#train_type <- tbl_df(data.frame(rep("train",nrow(subject_train)),
-#                               stringsAsFactors = FALSE))
 train_type <- as.character(rep("train",nrow(subject_train)))
 
 ## Combine 'test' & 'train' data & set column names
